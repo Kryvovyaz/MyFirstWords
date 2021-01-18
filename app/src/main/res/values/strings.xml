@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyFirstWords</string>
+    <string-array name="categories_en">
+
+        <item>Animals </item>
+        <item>Fruits</item>
+        <item>Vegetables</item>
+        <item>Berries</item>
+        <item>Food </item>
+        <item> Objects</item>
+        <item>Clothes </item>
+        <item>Vehicles</item>
+        <item>Outside </item>
+        <item>My Body </item>
+        <item>Colors</item>
+        <item>Alphabet </item>
+
+
+    </string-array>
+    <string-array name="categories_images">
+
+        <item>animals </item>
+        <item>fruits</item>
+        <item>vegetables</item>
+        <item>berries</item>
+        <item>food </item>
+        <item> objects</item>
+        <item>clothes </item>
+        <item>vehicles</item>
+        <item>outside </item>
+        <item>my_body </item>
+        <item>colors</item>
+        <item>alphabet </item>
+
+
+    </string-array>
+</resources>
