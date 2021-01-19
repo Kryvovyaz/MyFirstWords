@@ -57,6 +57,7 @@
         <item>Sheep</item>
         <item>Bunny</item>
         <item>Monkey</item>
+
     </string-array>
 
     <string-array name="animals_russian">
@@ -70,6 +71,7 @@
         <item>Овца</item>
         <item>Заяц</item>
         <item>Обезьяна</item>
+
     </string-array>
 
     <string-array name="animals_pictures">
@@ -83,6 +85,7 @@
         <item>picture7</item>
         <item>picture8</item>
         <item>picture9</item>
+
     </string-array>
 
     <string-array name="animals_sounds_effect">
@@ -96,6 +99,8 @@
         <item>sheep</item>
         <item>bunny</item>
         <item>monkey</item>
+
+
     </string-array>
 
     <string-array name="animals_sounds_english">
@@ -124,4 +129,56 @@
         <item>monkey_russian</item>
     </string-array>
 
+
+    <string-array name="fruits_pictures">
+        <item>apple</item>
+        <item>pineapple</item>
+        <item>lemon</item>
+        <item>orange</item>
+        <item>cherry</item>
+        <item>kiwi</item>
+        <item>pear</item>
+        <item>avocado</item>
+        <item>banana</item>
+        <item>peach</item>
+        <item>plum</item>
+        <item>grapes</item>
+        <item>lime</item>
+        <item>mango</item>
+        <item>apricot</item>
+    </string-array>
+
+    <string-array name="berries_pictures">
+
+        <item>watermelon</item>
+        <item>strawberry</item>
+        <item>blackberry</item>
+        <item>raspberry</item>
+        <item>blueberries</item>
+        <item>cranberry</item>
+
+        <item>melon</item>
+
+    </string-array>
+    <string-array name="vegetables_pictures">
+
+        <item>pumpkin</item>
+        <item>tomato</item>
+        <item>onion</item>
+        <item>potato</item>
+        <item>carrots</item>
+        <item>garlic</item>
+        <item>pee</item>
+        <item>cucumber</item>
+        <item>pepper</item>
+        <item>eggplant</item>
+        <item>corn</item>
+        <item>squash</item>
+        <item>broccoli</item>
+        <item>radishes</item>
+        <item>cabbage</item>
+        <item>mushroom</item>
+
+
+    </string-array>
 </resources>
