@@ -16,10 +16,11 @@ import com.example.myfirstwords.MainView.CategoriesClickListener;
 import java.util.ArrayList;
 
 public class LanguageActivity extends AppCompatActivity {
-    private RecyclerView recyclerView_main;
 
+    private RecyclerView recyclerView_main;
+    private int language;
     private ArrayList<Categorie> menu = new ArrayList<>();
-    public static final String EXTRA_POSITION = "MainActivity.extra.holder.position";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +32,7 @@ public class LanguageActivity extends AppCompatActivity {
         Bundle bundle1 = intent1.getExtras();
         if (bundle1 != null) {
 
-            int language = bundle1.getInt("LANGUAGE");
+            language = bundle1.getInt("LANGUAGE");
             populateMenuList(language);
         }
         CategorieList categorieList = new CategorieList(menu);
@@ -41,9 +42,11 @@ public class LanguageActivity extends AppCompatActivity {
         categorieList.setCategoriesClickListener(new CategoriesClickListener() {
             @Override
             public void onClick(int position) {
-                Toast.makeText(getApplicationContext(), "Position: " + position + " clicked.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), DetailedActivity.class);
-                intent.putExtra(EXTRA_POSITION, position);
+                Bundle bundle = new Bundle();
+                bundle.putInt("LANGUAGE", language);
+                bundle.putInt("Position", position);
+                intent.putExtras(bundle);
                 startActivity(intent);
 
 
