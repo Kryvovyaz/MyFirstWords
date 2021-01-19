@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapter.DetailedViewHolder> {
 
     public ArrayList<MenuItem> items_list;
-
+    public MediaPlayer player;
     public DetailedListAdapter(ArrayList<MenuItem> items_list) {
         this.items_list = items_list;
     }
@@ -33,6 +33,19 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
     @Override
     public void onBindViewHolder(@NonNull DetailedViewHolder holder, int position) {
         holder.itemImage.setImageResource(items_list.get(position).getImageId());
+        holder.make_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                play(v, items_list.get(position).getSound_effectID());
+            }
+        });
+        holder.make_say.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                play(v, items_list.get(position).getMake_sound());
+            }
+        });
+
     }
 
     @Override
@@ -40,19 +53,30 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
         return items_list.size();
     }
 
-    public void setItems_list(ArrayList<MenuItem> items_list) {
-        this.items_list = items_list;
+    //    public void setItems_list(ArrayList<MenuItem> items_list) {
+//        this.items_list = items_list;
+//    }
+    public void play(View v, int id) {
+        if (player != null) {
+            player.release();
+        }
+        player = MediaPlayer.create(v.getContext(), id);
+        player.start();
+    }
+
+    public void stopPlayer(View v) {
+        if (player != null) {
+            player.release();
+            player = null;
+        }
     }
 
     public class DetailedViewHolder extends RecyclerView.ViewHolder {
-        ArrayList<MenuItem> items_list;
-        MediaPlayer player;
-        private int imageID;
+        public ArrayList<MenuItem> items_list;
         private Button make_sound;
-        private int sound_effectID;
         private Button make_say;
         private int sound = R.raw.dog_russian;
-        private MenuItem menuItem;
+
         private ImageView itemImage;
 
         public DetailedViewHolder(@NonNull View itemView, ArrayList<MenuItem> animals) {
@@ -66,22 +90,10 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
             make_say = itemView.findViewById(R.id.make_say);
             make_sound = itemView.findViewById(R.id.make_sound);
             itemImage = itemView.findViewById(R.id.details_image);
-        }
+            make_say = itemView.findViewById(R.id.make_say);
+            make_sound = itemView.findViewById(R.id.make_sound);
 
-        public void play(View v, int id) {
-            if (player != null) {
-                player.release();
-            }
-            // player = MediaPlayer.create(getContext(), id);
-            player.start();
-        }
 
-        public void stopPlayer(View v) {
-            if (player != null) {
-                player.release();
-                player = null;
-            }
         }
     }
-
 }

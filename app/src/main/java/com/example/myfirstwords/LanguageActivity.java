@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.myfirstwords.DetailedView.DetailedActivity;
 import com.example.myfirstwords.MainView.Categorie;
@@ -40,7 +41,7 @@ public class LanguageActivity extends AppCompatActivity {
         categorieList.setCategoriesClickListener(new CategoriesClickListener() {
             @Override
             public void onClick(int position) {
-                //Toast.makeText(getApplicationContext(), "Position: " + position + " clicked.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Position: " + position + " clicked.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), DetailedActivity.class);
                 intent.putExtra(EXTRA_POSITION, position);
                 startActivity(intent);
