@@ -29,7 +29,7 @@ public class CategorieList extends RecyclerView.Adapter<CategorieList.CategorieH
     @NonNull
     @Override
     public CategorieList.CategorieHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_categories, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_menu, parent, false);
         return new CategorieHolder(view);
     }
 

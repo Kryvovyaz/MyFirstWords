@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.myfirstwords.MainView.Categorie;
@@ -15,47 +18,39 @@ import com.example.myfirstwords.MainView.CategoriesClickListener;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView recyclerView_main;
+    private ImageView button_ru;
+    private ImageView button_en;
 
-    public ArrayList<Categorie> getCategories() {
-        return categories;
-    }
-
-    private ArrayList<Categorie> categories = new ArrayList<>();
-    public static final String EXTRA_POSITION = "MainActivity.extra.holder.position";
+    Bundle bundle = new Bundle();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView_main = findViewById(R.id.recyclerview_main);
-        populateRecipeList();
-        //  View.OnClickListener listener = view -> onClickViewHolderAction(view);
+        // Reference your views
+        button_ru = findViewById(R.id.button_russian);
+        button_en = findViewById(R.id.button_english);
 
-        CategorieList categorieList = new CategorieList(categories);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView_main.setLayoutManager(linearLayoutManager);
-        recyclerView_main.setAdapter(categorieList);
-        categorieList.setCategoriesClickListener(new CategoriesClickListener() {
+        button_ru.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(int position) {
-                Toast.makeText(getApplicationContext(), "Position: " + position + " clicked.", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), Categorie.class);
-                intent.putExtra(EXTRA_POSITION, position);
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), LanguageActivity.class);
+                bundle.putInt("LANGUAGE", 1);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
+
+        button_en.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), LanguageActivity.class);
+                bundle.putInt("LANGUAGE", 2);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
         });
     }
 
-
-    public void populateRecipeList() {
-        String[] categ = getResources().getStringArray(R.array.categories_en);
-        String[] imageTitles = getResources().getStringArray(R.array.categories_images);
-
-        for (int i = 0; i < categ.length; i++) {
-            int imageId = getResources().getIdentifier(imageTitles[i], "drawable", getPackageName());
-
-            categories.add(new Categorie(categ[i], imageId));
-        }
-    }
 }

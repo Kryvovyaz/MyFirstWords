@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">MyFirstWords</string>
     <string-array name="categories_en">
-
         <item>Animals </item>
         <item>Fruits</item>
         <item>Vegetables</item>
@@ -14,9 +13,23 @@
         <item>My Body </item>
         <item>Colors</item>
         <item>Alphabet </item>
-
-
     </string-array>
+
+    <string-array name="categories_ru">
+        <item>Животные </item>
+        <item>Фрукты</item>
+        <item>Овощи</item>
+        <item>Ягоды</item>
+        <item>Продукты </item>
+        <item>Предметы</item>
+        <item>Одежда</item>
+        <item>Транспорт</item>
+        <item>Всё вокруг </item>
+        <item>Части тела </item>
+        <item>Цвета</item>
+        <item>Алфавит</item>
+    </string-array>
+
     <string-array name="categories_images">
 
         <item>animals </item>
@@ -31,7 +44,84 @@
         <item>my_body </item>
         <item>colors</item>
         <item>alphabet </item>
-
-
     </string-array>
+
+    <string-array name="animals_english">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Cow</item>
+        <item>Horse</item>
+        <item>Bird</item>
+        <item>Deer</item>
+        <item>Pig</item>
+        <item>Sheep</item>
+        <item>Bunny</item>
+        <item>Monkey</item>
+    </string-array>
+
+    <string-array name="animals_russian">
+        <item>Собака</item>
+        <item>Кошка</item>
+        <item>Корова</item>
+        <item>Лощадь</item>
+        <item>Птица</item>
+        <item>Олень</item>
+        <item>Свинья</item>
+        <item>Овца</item>
+        <item>Заяц</item>
+        <item>Обезьяна</item>
+    </string-array>
+
+    <string-array name="animals_pictures">
+        <item>picture0</item>
+        <item>picture1</item>
+        <item>picture2</item>
+        <item>picture3</item>
+        <item>picture4</item>
+        <item>picture5</item>
+        <item>picture6</item>
+        <item>picture7</item>
+        <item>picture8</item>
+        <item>picture9</item>
+    </string-array>
+
+    <string-array name="animals_sounds_effect">
+        <item>dog</item>
+        <item>cat</item>
+        <item>cow</item>
+        <item>horse</item>
+        <item>bird</item>
+        <item>deer</item>
+        <item>pig</item>
+        <item>sheep</item>
+        <item>bunny</item>
+        <item>monkey</item>
+    </string-array>
+
+    <string-array name="animals_sounds_english">
+        <item>dog_english</item>
+        <item>cat_english</item>
+        <item>cow_english</item>
+        <item>horse_english</item>
+        <item>bird_english</item>
+        <item>deer_english</item>
+        <item>pig_english</item>
+        <item>sheep_english</item>
+        <item>bunny_english</item>
+        <item>monkey_english</item>
+    </string-array>
+
+    <string-array name="animals_sounds_russian">
+        <item>dog_russian</item>
+        <item>cat_russian</item>
+        <item>cow_russian</item>
+        <item>horse_russian</item>
+        <item>bird_russian</item>
+        <item>deer_russian</item>
+        <item>pig_russian</item>
+        <item>sheep_russian</item>
+        <item>bunny_russian</item>
+        <item>monkey_russian</item>
+    </string-array>
+
 </resources>
