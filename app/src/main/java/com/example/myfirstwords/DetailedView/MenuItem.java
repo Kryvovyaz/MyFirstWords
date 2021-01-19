@@ -10,17 +10,17 @@ public class MenuItem {
     private int make_sound;
 
 
-    public MenuItem(int imageId, int sound_effecrID, int sound) {
+    public MenuItem(int imageId, int sound_effecrID, int make_sound) {
 
         this.imageId = imageId;
         this.sound_effectID = sound_effecrID;
-        this.make_sound = sound;
+        this.make_sound = make_sound;
     }
 
-    public MenuItem(int imageId, int sound_effecrID) {
+    public MenuItem(int imageId, int make_sound) {
 
         this.imageId = imageId;
-        this.sound_effectID = sound_effecrID;
+        this.make_sound = make_sound;
 
     }
 

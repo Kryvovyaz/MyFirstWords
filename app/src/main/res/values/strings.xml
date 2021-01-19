@@ -147,7 +147,43 @@
         <item>mango</item>
         <item>apricot</item>
     </string-array>
+    <string-array name="fruits_sounds_english">
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
+        <item>dog_english</item>
 
+    </string-array>
+
+    <string-array name="fruits_sounds_russian">
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+        <item>dog_russian</item>
+
+    </string-array>
     <string-array name="berries_pictures">
 
         <item>watermelon</item>

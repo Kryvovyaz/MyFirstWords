@@ -19,6 +19,7 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
 
     public ArrayList<MenuItem> items_list;
     public MediaPlayer player;
+
     public DetailedListAdapter(ArrayList<MenuItem> items_list) {
         this.items_list = items_list;
     }
@@ -33,16 +34,27 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
     @Override
     public void onBindViewHolder(@NonNull DetailedViewHolder holder, int position) {
         holder.itemImage.setImageResource(items_list.get(position).getImageId());
+        //if (position == 0) {
+
         holder.make_sound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 play(v, items_list.get(position).getSound_effectID());
             }
         });
+        //  } else {
+        //holder.make_sound.setEnabled(false);
+        // holder.make_sound.setVisibility(View.INVISIBLE);
+        // }
+
+
         holder.make_say.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 play(v, items_list.get(position).getMake_sound());
+
+
             }
         });
 
@@ -89,10 +101,12 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
 
             make_say = itemView.findViewById(R.id.make_say);
             make_sound = itemView.findViewById(R.id.make_sound);
+//          if(getAdapterPosition()!=0){
+//               make_sound.setVisibility(View.INVISIBLE);}
             itemImage = itemView.findViewById(R.id.details_image);
-            make_say = itemView.findViewById(R.id.make_say);
-            make_sound = itemView.findViewById(R.id.make_sound);
 
+            make_sound.setSoundEffectsEnabled(false);
+            make_say.setSoundEffectsEnabled(false);
 
         }
     }

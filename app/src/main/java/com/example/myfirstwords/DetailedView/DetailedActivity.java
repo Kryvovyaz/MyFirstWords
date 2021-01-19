@@ -15,11 +15,11 @@ import com.example.myfirstwords.R;
 import java.util.ArrayList;
 
 public class DetailedActivity extends AppCompatActivity {
-    private static final String EXTRA_POSITION = "position";
+
     private RecyclerView recyclerView;
     private ArrayList<MenuItem> items_list = new ArrayList<>();
     private int language;
-    private int position;
+    private int list_position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +31,15 @@ public class DetailedActivity extends AppCompatActivity {
         if (bundle1 != null) {
 
             language = bundle1.getInt("LANGUAGE");
-            position = bundle1.getInt("Position");
+            list_position = bundle1.getInt("Position");
 
-            switch (position) {
+            switch (list_position) {
                 case 0:
                     populateAnimalsList(language);
                     break;
-
-
+                case 1:
+                    populateFruitsList(language);
+                    break;
             }
         }
 
@@ -78,5 +79,30 @@ public class DetailedActivity extends AppCompatActivity {
         }
     }
 
+    public void populateFruitsList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.fruits_pictures);
+
+        String[] sounds = new String[images.length];
+
+        if (language == 2) {
+
+            sounds = getResources().getStringArray(R.array.fruits_sounds_english);
+        }
+        if (language == 1) {
+
+            sounds = getResources().getStringArray(R.array.fruits_sounds_russian);
+        }
+        //String[] animals = getResources().getStringArray(R.array.animals_russian);
+
+        for (int i = 0; i < images.length; i++) {
+            int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
+
+            //to be added rus and english sound
+            int sound = getResources().getIdentifier(sounds[i], "raw", getPackageName());
+
+            items_list.add(new MenuItem(imageId, sound));
+        }
+    }
 
 }
