@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
 
 import com.example.myfirstwords.DetailedView.DetailedListAdapter;
 import com.example.myfirstwords.DetailedView.MenuItem;
@@ -41,13 +43,14 @@ public class DetailedActivity extends AppCompatActivity {
                     populateFruitsList(language);
                     break;
             }
+
         }
 
 
         recyclerView = findViewById(R.id.recycler_detailed);
 
 
-        DetailedListAdapter detailedListAdapter = new DetailedListAdapter(items_list);
+        DetailedListAdapter detailedListAdapter = new DetailedListAdapter(items_list, list_position);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(detailedListAdapter);
