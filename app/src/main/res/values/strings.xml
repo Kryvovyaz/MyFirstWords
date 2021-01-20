@@ -148,40 +148,40 @@
         <item>apricot</item>
     </string-array>
     <string-array name="fruits_sounds_english">
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
-        <item>dog_english</item>
+        <item>apple_english</item>
+        <item>pineapple_english</item>
+        <item>lemon_english</item>
+        <item>orange_english</item>
+        <item>cherry_english</item>
+        <item>kiwi_english</item>
+        <item>pear_english</item>
+        <item>avocado_english</item>
+        <item>banana_english</item>
+        <item>peach_english</item>
+        <item>plum_english</item>
+        <item>grape_english</item>
+        <item>lime_english</item>
+        <item>mango_english</item>
+        <item>apricot_english</item>
 
     </string-array>
 
     <string-array name="fruits_sounds_russian">
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
-        <item>dog_russian</item>
+        <item>apple_russian</item>
+        <item>pineapple_russian</item>
+        <item>lemon_russian</item>
+        <item>orange_russian</item>
+        <item>cherry_russian</item>
+        <item>kiwi_russian</item>
+        <item>pear_russian</item>
+        <item>avocado_russian</item>
+        <item>banana_russian</item>
+        <item>peach_russian</item>
+        <item>plum_russian</item>
+        <item>grape_russian</item>
+        <item>lime_russian</item>
+        <item>mango_russian</item>
+        <item>apricot_russian</item>
 
     </string-array>
     <string-array name="berries_pictures">

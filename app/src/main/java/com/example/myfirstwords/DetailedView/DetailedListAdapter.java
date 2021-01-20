@@ -94,7 +94,6 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
         public Button make_sound;
         public Button make_say;
         private int sound = R.raw.dog_russian;
-        private int listposition;
         private ImageView itemImage;
 
         public DetailedViewHolder(@NonNull View itemView, ArrayList<MenuItem> animals) {
@@ -109,16 +108,9 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
 
             make_say = itemView.findViewById(R.id.make_say);
             make_sound = itemView.findViewById(R.id.make_sound);
-
             itemImage = itemView.findViewById(R.id.details_image);
-
             make_sound.setSoundEffectsEnabled(false);
             make_say.setSoundEffectsEnabled(false);
-
-            if (listposition != 0) {
-                make_sound.setVisibility(View.GONE);
-
-            }
 
 
         }
