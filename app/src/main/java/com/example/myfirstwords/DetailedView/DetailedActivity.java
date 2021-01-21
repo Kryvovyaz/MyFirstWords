@@ -74,7 +74,6 @@ public class DetailedActivity extends AppCompatActivity {
             aimalsName = getResources().getStringArray(R.array.animals_russian);
 
         }
-        //String[] animals = getResources().getStringArray(R.array.animals_russian);
 
         for (int i = 0; i < images.length; i++) {
             int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
@@ -89,25 +88,22 @@ public class DetailedActivity extends AppCompatActivity {
 
         String[] images = getResources().getStringArray(R.array.fruits_pictures);
 
-        String[] sounds = new String[images.length];
+        String[] names = new String[images.length];
 
         if (language == 2) {
 
-            sounds = getResources().getStringArray(R.array.fruits_sounds_english);
+            names = getResources().getStringArray(R.array.fruits_names_english);
         }
         if (language == 1) {
 
-            sounds = getResources().getStringArray(R.array.fruits_sounds_russian);
+            names = getResources().getStringArray(R.array.fruits_names_russian);
         }
-        //String[] animals = getResources().getStringArray(R.array.animals_russian);
+
 
         for (int i = 0; i < images.length; i++) {
             int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
+            items_list.add(new MenuItem(imageId, names[i]));
 
-            //to be added rus and english sound
-            int sound = getResources().getIdentifier(sounds[i], "raw", getPackageName());
-
-            //items_list.add(new MenuItem(imageId, sound,));
         }
     }
 

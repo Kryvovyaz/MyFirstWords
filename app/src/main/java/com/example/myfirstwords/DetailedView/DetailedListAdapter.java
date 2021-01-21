@@ -75,10 +75,10 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
         holder.make_say.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (player.isPlaying()) {
-                    stopPlayer(v);
-                }
+//
+//                if (player.isPlaying()) {
+//                    stopPlayer(v);
+//                }
                 // play(v, items_list.get(position).getMake_sound());
                 String toSpeak = items_list.get(position).getName();
 
@@ -139,4 +139,5 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
 
         }
     }
+
 }
