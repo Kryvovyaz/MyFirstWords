@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -15,6 +16,7 @@ import com.example.myfirstwords.MainView.CategorieList;
 import com.example.myfirstwords.R;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class DetailedActivity extends AppCompatActivity {
 
@@ -22,6 +24,7 @@ public class DetailedActivity extends AppCompatActivity {
     private ArrayList<MenuItem> items_list = new ArrayList<>();
     private int language;
     private int list_position;
+    TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +53,7 @@ public class DetailedActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_detailed);
 
 
-        DetailedListAdapter detailedListAdapter = new DetailedListAdapter(items_list, list_position);
+        DetailedListAdapter detailedListAdapter = new DetailedListAdapter(items_list, list_position, language);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(detailedListAdapter);
@@ -61,15 +64,15 @@ public class DetailedActivity extends AppCompatActivity {
     public void populateAnimalsList(int language) {
         String[] images = getResources().getStringArray(R.array.animals_pictures);
         String[] sound_effects = getResources().getStringArray(R.array.animals_sounds_effect);
-        String[] sounds = new String[images.length];
 
+        String[] aimalsName = new String[images.length];
         if (language == 2) {
+            aimalsName = getResources().getStringArray(R.array.animals_english);
 
-            sounds = getResources().getStringArray(R.array.animals_sounds_english);
         }
         if (language == 1) {
+            aimalsName = getResources().getStringArray(R.array.animals_russian);
 
-            sounds = getResources().getStringArray(R.array.animals_sounds_russian);
         }
         //String[] animals = getResources().getStringArray(R.array.animals_russian);
 
@@ -77,8 +80,8 @@ public class DetailedActivity extends AppCompatActivity {
             int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
 
             int sound_effectID = getResources().getIdentifier(sound_effects[i], "raw", getPackageName());
-            int sound_englishID = getResources().getIdentifier(sounds[i], "raw", getPackageName());
-            items_list.add(new MenuItem(imageId, sound_effectID, sound_englishID));
+
+            items_list.add(new MenuItem(imageId, sound_effectID, aimalsName[i]));
         }
     }
 
@@ -104,7 +107,7 @@ public class DetailedActivity extends AppCompatActivity {
             //to be added rus and english sound
             int sound = getResources().getIdentifier(sounds[i], "raw", getPackageName());
 
-            items_list.add(new MenuItem(imageId, sound));
+            //items_list.add(new MenuItem(imageId, sound,));
         }
     }
 

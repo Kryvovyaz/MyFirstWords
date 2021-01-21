@@ -7,30 +7,33 @@ public class MenuItem {
 
     private int imageId;
     private int sound_effectID;
-    private int make_sound;
+
+    private String name;
 
 
-    public MenuItem(int imageId, int sound_effecrID, int make_sound) {
-
-        this.imageId = imageId;
-        this.sound_effectID = sound_effecrID;
-        this.make_sound = make_sound;
+    public String getName() {
+        return name;
     }
 
-    public MenuItem(int imageId, int make_sound) {
+    public MenuItem(int imageId, int sound_effectID, String name) {
 
         this.imageId = imageId;
-        this.make_sound = make_sound;
+        this.sound_effectID = sound_effectID;
 
+        this.name = name;
+    }
+
+    public MenuItem(int imageId, String name) {
+
+        this.imageId = imageId;
+
+        this.name = name;
     }
 
     public int getSound_effectID() {
         return sound_effectID;
     }
 
-    public int getMake_sound() {
-        return make_sound;
-    }
 
     public int getImageId() {
         return imageId;
