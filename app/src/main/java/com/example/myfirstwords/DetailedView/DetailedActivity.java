@@ -53,6 +53,9 @@ public class DetailedActivity extends AppCompatActivity {
                 case 3:
                     populateBerriesList(language);
                     break;
+                case 7:
+                    populateVehiclesList(language);
+                    break;
             }
 
         }
@@ -154,6 +157,30 @@ public class DetailedActivity extends AppCompatActivity {
         if (language == 1) {
 
             names = getResources().getStringArray(R.array.vegetables_names_russian);
+        }
+
+
+        for (int i = 0; i < images.length; i++) {
+            int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
+            items_list.add(new MenuItem(imageId, names[i]));
+
+        }
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    public void populateVehiclesList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.vehicles_pictures);
+
+        String[] names = new String[images.length];
+
+        if (language == 2) {
+
+            names = getResources().getStringArray(R.array.vehicles_names_english);
+        }
+        if (language == 1) {
+
+            names = getResources().getStringArray(R.array.vehicles_names_russian);
         }
 
 

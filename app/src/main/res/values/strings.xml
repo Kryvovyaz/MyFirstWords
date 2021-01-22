@@ -238,4 +238,43 @@
         <item>Гриб</item>
     </string-array>
 
+    <string-array name="vehicles_pictures">
+        <item>truck</item>
+        <item>car</item>
+        <item>tractor</item>
+        <item>bus</item>
+        <item>bike</item>
+        <item>airplane</item>
+        <item>helicopter</item>
+        <item>train</item>
+        <item>boat</item>
+        <item>bicycle</item>
+    </string-array>
+
+    <string-array name="vehicles_names_english">
+        <item>Truck</item>
+        <item>Car</item>
+        <item>Tractor</item>
+        <item>Bus</item>
+        <item>Bike</item>
+        <item>Airplane</item>
+        <item>Helicopter</item>
+        <item>Train</item>
+        <item>Boat</item>
+        <item>Bicycle</item>
+    </string-array>
+
+    <string-array name="vehicles_names_russian">
+        <item>Грузовик</item>
+        <item>Машина</item>
+        <item>Трактор</item>
+        <item>Автобус</item>
+        <item>Мотоцикл</item>
+        <item>Самолёт</item>
+        <item>Вертолет</item>
+        <item>Поезд</item>
+        <item>Корабль</item>
+        <item>Велосипед</item>
+    </string-array>
+
 </resources>
