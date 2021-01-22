@@ -31,7 +31,6 @@
     </string-array>
 
     <string-array name="categories_images">
-
         <item>animals </item>
         <item>fruits</item>
         <item>vegetables</item>
@@ -57,7 +56,6 @@
         <item>Sheep</item>
         <item>Bunny</item>
         <item>Monkey</item>
-
     </string-array>
 
     <string-array name="animals_russian">
@@ -71,7 +69,6 @@
         <item>Овца</item>
         <item>Заяц</item>
         <item>Обезьяна</item>
-
     </string-array>
 
     <string-array name="animals_pictures">
@@ -85,7 +82,6 @@
         <item>picture7</item>
         <item>picture8</item>
         <item>picture9</item>
-
     </string-array>
 
     <string-array name="animals_sounds_effect">
@@ -99,8 +95,6 @@
         <item>sheep</item>
         <item>bunny</item>
         <item>monkey</item>
-
-
     </string-array>
 
     <string-array name="fruits_pictures">
@@ -120,6 +114,7 @@
         <item>mango</item>
         <item>apricot</item>
     </string-array>
+
     <string-array name="fruits_names_english">
         <item>Apple</item>
         <item>Pineapple</item>
@@ -137,9 +132,10 @@
         <item>Mango</item>
         <item>Apricot</item>
     </string-array>
+
     <string-array name="fruits_names_russian">
         <item>Яблоко</item>
-        <item>Апельсин</item>
+        <item>Ананас</item>
         <item>Лимон</item>
         <item>Апельсин</item>
         <item>Вишня</item>
@@ -156,19 +152,36 @@
     </string-array>
 
     <string-array name="berries_pictures">
-
         <item>watermelon</item>
         <item>strawberry</item>
         <item>blackberry</item>
         <item>raspberry</item>
         <item>blueberries</item>
         <item>cranberry</item>
-
         <item>melon</item>
-
     </string-array>
-    <string-array name="vegetables_pictures">
 
+    <string-array name="berries_names_english">
+        <item>Watermelon</item>
+        <item>Strawberry</item>
+        <item>Blackberry</item>
+        <item>Raspberry</item>
+        <item>Blueberries</item>
+        <item>Cranberry</item>
+        <item>Melon</item>
+    </string-array>
+
+    <string-array name="berries_names_russian">
+        <item>Арбуз</item>
+        <item>Клубника</item>
+        <item>Ежевика</item>
+        <item>Малина</item>
+        <item>Голубика</item>
+        <item>Клюква</item>
+        <item>Дыня</item>
+    </string-array>
+
+    <string-array name="vegetables_pictures">
         <item>pumpkin</item>
         <item>tomato</item>
         <item>onion</item>
@@ -185,7 +198,44 @@
         <item>radishes</item>
         <item>cabbage</item>
         <item>mushroom</item>
-
-
     </string-array>
+
+    <string-array name="vegetables_names_english">
+        <item>Pumpkin</item>
+        <item>Tomato</item>
+        <item>Onion</item>
+        <item>Potato</item>
+        <item>Carrots</item>
+        <item>Garlic</item>
+        <item>Pee</item>
+        <item>Cucumber</item>
+        <item>Pepper</item>
+        <item>Eggplant</item>
+        <item>Corn</item>
+        <item>Squash</item>
+        <item>Broccoli</item>
+        <item>Radish</item>
+        <item>Cabbage</item>
+        <item>Mushroom</item>
+    </string-array>
+
+    <string-array name="vegetables_names_russian">
+        <item>Тыква</item>
+        <item>Помидор</item>
+        <item>Лук</item>
+        <item>Potato</item>
+        <item>Морковь</item>
+        <item>Чеснок</item>
+        <item>Горох</item>
+        <item>Огурец</item>
+        <item>Перец</item>
+        <item>Баклажан</item>
+        <item>Кукуруза</item>
+        <item>Кабачок</item>
+        <item>Броколи</item>
+        <item>Редиска</item>
+        <item>Капуста</item>
+        <item>Гриб</item>
+    </string-array>
+
 </resources>

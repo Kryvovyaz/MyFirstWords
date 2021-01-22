@@ -45,6 +45,14 @@ public class DetailedActivity extends AppCompatActivity {
                 case 1:
                     populateFruitsList(language);
                     break;
+
+                case 2:
+                    populateVegetablesList(language);
+                    break;
+
+                case 3:
+                    populateBerriesList(language);
+                    break;
             }
 
         }
@@ -84,6 +92,7 @@ public class DetailedActivity extends AppCompatActivity {
         }
     }
 
+    ////////////////////////////////////////////////////////////////////////////////////////////
     public void populateFruitsList(int language) {
 
         String[] images = getResources().getStringArray(R.array.fruits_pictures);
@@ -107,4 +116,52 @@ public class DetailedActivity extends AppCompatActivity {
         }
     }
 
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    public void populateBerriesList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.berries_pictures);
+
+        String[] names = new String[images.length];
+
+        if (language == 2) {
+
+            names = getResources().getStringArray(R.array.berries_names_english);
+        }
+        if (language == 1) {
+
+            names = getResources().getStringArray(R.array.berries_names_russian);
+        }
+
+
+        for (int i = 0; i < images.length; i++) {
+            int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
+            items_list.add(new MenuItem(imageId, names[i]));
+
+        }
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////////
+    public void populateVegetablesList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.vegetables_pictures);
+
+        String[] names = new String[images.length];
+
+        if (language == 2) {
+
+            names = getResources().getStringArray(R.array.vegetables_names_english);
+        }
+        if (language == 1) {
+
+            names = getResources().getStringArray(R.array.vegetables_names_russian);
+        }
+
+
+        for (int i = 0; i < images.length; i++) {
+            int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
+            items_list.add(new MenuItem(imageId, names[i]));
+
+        }
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////
 }
