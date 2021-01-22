@@ -55,6 +55,9 @@
         <item>Pig</item>
         <item>Sheep</item>
         <item>Bunny</item>
+        <item>Wolf</item>
+
+
         <item>Monkey</item>
         <item>Elephant</item>
         <item>Zebra</item>
@@ -73,6 +76,8 @@
         <item>Свинья</item>
         <item>Овца</item>
         <item>Заяц</item>
+        <item>Волк</item>
+
         <item>Обезьяна</item>
         <item>Слон</item>
         <item>Зебра</item>
@@ -91,6 +96,9 @@
         <item>picture6</item>
         <item>picture7</item>
         <item>picture8</item>
+        <item>wolf</item>
+
+
         <item>picture9</item>
         <item>elephant</item>
         <item>zebra</item>
@@ -110,6 +118,7 @@
         <item>pig</item>
         <item>sheep</item>
         <item>bunny</item>
+        <item>wolf</item>
         <item>monkey</item>
         <item>elephant</item>
         <item>zebra</item>
@@ -230,7 +239,7 @@
         <item>Potato</item>
         <item>Carrots</item>
         <item>Garlic</item>
-        <item>Pee</item>
+        <item>Pea</item>
         <item>Cucumber</item>
         <item>Pepper</item>
         <item>Eggplant</item>
