@@ -45,26 +45,7 @@
         <item>alphabet </item>
     </string-array>
 
-    <string-array name="animals_english">
-        <item>Dog</item>
-        <item>Cat</item>
-        <item>Cow</item>
-        <item>Horse</item>
-        <item>Bird</item>
-        <item>Deer</item>
-        <item>Pig</item>
-        <item>Sheep</item>
-        <item>Bunny</item>
-        <item>Wolf</item>
 
-
-        <item>Monkey</item>
-        <item>Elephant</item>
-        <item>Zebra</item>
-        <item>Tiger</item>
-        <item>Giraffe</item>
-        <item>Lion</item>
-    </string-array>
 
     <string-array name="animals_russian">
         <item>Собака</item>
@@ -147,23 +128,6 @@
         <item>apricot</item>
     </string-array>
 
-    <string-array name="fruits_names_english">
-        <item>Apple</item>
-        <item>Pineapple</item>
-        <item>Lemon</item>
-        <item>Orange</item>
-        <item>Cherry</item>
-        <item>Kiwi</item>
-        <item>Pear</item>
-        <item>Avocado</item>
-        <item>Banana</item>
-        <item>Peach</item>
-        <item>Plum</item>
-        <item>Grape</item>
-        <item>Lime</item>
-        <item>Mango</item>
-        <item>Apricot</item>
-    </string-array>
 
     <string-array name="fruits_names_russian">
         <item>Яблоко</item>
@@ -193,15 +157,6 @@
         <item>melon</item>
     </string-array>
 
-    <string-array name="berries_names_english">
-        <item>Watermelon</item>
-        <item>Strawberry</item>
-        <item>Blackberry</item>
-        <item>Raspberry</item>
-        <item>Blueberries</item>
-        <item>Cranberry</item>
-        <item>Melon</item>
-    </string-array>
 
     <string-array name="berries_names_russian">
         <item>Арбуз</item>
@@ -232,24 +187,6 @@
         <item>mushroom</item>
     </string-array>
 
-    <string-array name="vegetables_names_english">
-        <item>Pumpkin</item>
-        <item>Tomato</item>
-        <item>Onion</item>
-        <item>Potato</item>
-        <item>Carrots</item>
-        <item>Garlic</item>
-        <item>Pea</item>
-        <item>Cucumber</item>
-        <item>Pepper</item>
-        <item>Eggplant</item>
-        <item>Corn</item>
-        <item>Squash</item>
-        <item>Broccoli</item>
-        <item>Radish</item>
-        <item>Cabbage</item>
-        <item>Mushroom</item>
-    </string-array>
 
     <string-array name="vegetables_names_russian">
         <item>Тыква</item>
@@ -281,19 +218,6 @@
         <item>train</item>
         <item>boat</item>
         <item>bicycle</item>
-    </string-array>
-
-    <string-array name="vehicles_names_english">
-        <item>Truck</item>
-        <item>Car</item>
-        <item>Tractor</item>
-        <item>Bus</item>
-        <item>Bike</item>
-        <item>Airplane</item>
-        <item>Helicopter</item>
-        <item>Train</item>
-        <item>Boat</item>
-        <item>Bicycle</item>
     </string-array>
 
     <string-array name="vehicles_names_russian">

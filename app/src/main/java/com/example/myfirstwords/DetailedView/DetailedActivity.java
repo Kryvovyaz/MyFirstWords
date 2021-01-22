@@ -78,7 +78,7 @@ public class DetailedActivity extends AppCompatActivity {
 
         String[] aimalsName = new String[images.length];
         if (language == 2) {
-            aimalsName = getResources().getStringArray(R.array.animals_english);
+            aimalsName = getResources().getStringArray(R.array.animals_pictures);
 
         }
         if (language == 1) {
@@ -104,7 +104,7 @@ public class DetailedActivity extends AppCompatActivity {
 
         if (language == 2) {
 
-            names = getResources().getStringArray(R.array.fruits_names_english);
+            names = getResources().getStringArray(R.array.fruits_pictures);
         }
         if (language == 1) {
 
@@ -128,7 +128,7 @@ public class DetailedActivity extends AppCompatActivity {
 
         if (language == 2) {
 
-            names = getResources().getStringArray(R.array.berries_names_english);
+            names = getResources().getStringArray(R.array.berries_pictures);
         }
         if (language == 1) {
 
@@ -152,7 +152,7 @@ public class DetailedActivity extends AppCompatActivity {
 
         if (language == 2) {
 
-            names = getResources().getStringArray(R.array.vegetables_names_english);
+            names = getResources().getStringArray(R.array.vegetables_pictures);
         }
         if (language == 1) {
 
@@ -176,7 +176,7 @@ public class DetailedActivity extends AppCompatActivity {
 
         if (language == 2) {
 
-            names = getResources().getStringArray(R.array.vehicles_names_english);
+            names = getResources().getStringArray(R.array.vehicles_pictures);
         }
         if (language == 1) {
 
