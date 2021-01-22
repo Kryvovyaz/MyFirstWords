@@ -56,6 +56,8 @@
         <item>Sheep</item>
         <item>Bunny</item>
         <item>Monkey</item>
+        <item>Elephant</item>
+        <item>Zebra</item>
     </string-array>
 
     <string-array name="animals_russian">
@@ -69,6 +71,8 @@
         <item>Овца</item>
         <item>Заяц</item>
         <item>Обезьяна</item>
+        <item>Слон</item>
+        <item>Зебра</item>
     </string-array>
 
     <string-array name="animals_pictures">
@@ -82,6 +86,9 @@
         <item>picture7</item>
         <item>picture8</item>
         <item>picture9</item>
+        <item>elephant</item>
+        <item>zebra</item>
+
     </string-array>
 
     <string-array name="animals_sounds_effect">
@@ -95,6 +102,10 @@
         <item>sheep</item>
         <item>bunny</item>
         <item>monkey</item>
+        <item>elephant</item>
+        <item>zebra</item>
+
+
     </string-array>
 
     <string-array name="fruits_pictures">
