@@ -58,7 +58,6 @@
         <item>Овца</item>
         <item>Заяц</item>
         <item>Волк</item>
-
         <item>Обезьяна</item>
         <item>Слон</item>
         <item>Зебра</item>
@@ -68,19 +67,17 @@
     </string-array>
 
     <string-array name="animals_pictures">
-        <item>picture0</item>
-        <item>picture1</item>
-        <item>picture2</item>
-        <item>picture3</item>
-        <item>picture4</item>
-        <item>picture5</item>
-        <item>picture6</item>
-        <item>picture7</item>
-        <item>picture8</item>
+        <item>dog</item>
+        <item>cat</item>
+        <item>cow</item>
+        <item>horse</item>
+        <item>bird</item>
+        <item>deer</item>
+        <item>pig</item>
+        <item>sheep</item>
+        <item>bunny</item>
         <item>wolf</item>
-
-
-        <item>picture9</item>
+        <item>monkey</item>
         <item>elephant</item>
         <item>zebra</item>
         <item>tiger</item>
@@ -233,4 +230,27 @@
         <item>Велосипед</item>
     </string-array>
 
+    <string-array name="mybody_pictures">
+        <item>legs</item>
+        <item>toes</item>
+        <item>arm</item>
+        <item>belly</item>
+        <item>eye</item>
+        <item>mouth</item>
+        <item>nose</item>
+        <item>ear</item>
+
+    </string-array>
+
+    <string-array name="mybody_names_russian">
+        <item>Нога</item>
+        <item>Пальцы</item>
+        <item>Рука</item>
+        <item>Живот</item>
+        <item>Глаз</item>
+        <item>Рот</item>
+        <item>Нос</item>
+        <item>Ухо</item>
+
+    </string-array>
 </resources>

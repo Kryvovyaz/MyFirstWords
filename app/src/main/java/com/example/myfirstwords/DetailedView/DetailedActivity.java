@@ -56,6 +56,12 @@ public class DetailedActivity extends AppCompatActivity {
                 case 7:
                     populateVehiclesList(language);
                     break;
+
+
+                case 9:
+                    populateMyBodyList(language);
+                    break;
+
             }
 
         }
@@ -111,12 +117,8 @@ public class DetailedActivity extends AppCompatActivity {
             names = getResources().getStringArray(R.array.fruits_names_russian);
         }
 
+        addItemtoList(images, names);
 
-        for (int i = 0; i < images.length; i++) {
-            int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
-            items_list.add(new MenuItem(imageId, names[i]));
-
-        }
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////
@@ -135,13 +137,10 @@ public class DetailedActivity extends AppCompatActivity {
             names = getResources().getStringArray(R.array.berries_names_russian);
         }
 
+        addItemtoList(images, names);
 
-        for (int i = 0; i < images.length; i++) {
-            int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
-            items_list.add(new MenuItem(imageId, names[i]));
-
-        }
     }
+
 
     /////////////////////////////////////////////////////////////////////////////////////////////
     public void populateVegetablesList(int language) {
@@ -158,13 +157,8 @@ public class DetailedActivity extends AppCompatActivity {
 
             names = getResources().getStringArray(R.array.vegetables_names_russian);
         }
+        addItemtoList(images, names);
 
-
-        for (int i = 0; i < images.length; i++) {
-            int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
-            items_list.add(new MenuItem(imageId, names[i]));
-
-        }
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////
@@ -182,7 +176,33 @@ public class DetailedActivity extends AppCompatActivity {
 
             names = getResources().getStringArray(R.array.vehicles_names_russian);
         }
+        addItemtoList(images, names);
 
+
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    public void populateMyBodyList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.mybody_pictures);
+
+        String[] names = new String[images.length];
+
+        if (language == 2) {
+
+            names = getResources().getStringArray(R.array.mybody_pictures);
+        }
+        if (language == 1) {
+
+            names = getResources().getStringArray(R.array.mybody_names_russian);
+        }
+        addItemtoList(images, names);
+
+
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    public void addItemtoList(String[] names, String[] images) {
 
         for (int i = 0; i < images.length; i++) {
             int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
@@ -190,5 +210,4 @@ public class DetailedActivity extends AppCompatActivity {
 
         }
     }
-    //////////////////////////////////////////////////////////////////////////////////////////
 }
