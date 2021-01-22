@@ -58,6 +58,9 @@
         <item>Monkey</item>
         <item>Elephant</item>
         <item>Zebra</item>
+        <item>Tiger</item>
+        <item>Giraffe</item>
+        <item>Lion</item>
     </string-array>
 
     <string-array name="animals_russian">
@@ -73,6 +76,9 @@
         <item>Обезьяна</item>
         <item>Слон</item>
         <item>Зебра</item>
+        <item>Тигр</item>
+        <item>Жираф</item>
+        <item>Лев</item>
     </string-array>
 
     <string-array name="animals_pictures">
@@ -88,6 +94,9 @@
         <item>picture9</item>
         <item>elephant</item>
         <item>zebra</item>
+        <item>tiger</item>
+        <item>giraffe</item>
+        <item>lion</item>
 
     </string-array>
 
@@ -104,6 +113,9 @@
         <item>monkey</item>
         <item>elephant</item>
         <item>zebra</item>
+        <item>tiger</item>
+        <item>giraffe</item>
+        <item>lion</item>
 
 
     </string-array>
