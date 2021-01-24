@@ -46,7 +46,6 @@
     </string-array>
 
 
-
     <string-array name="animals_russian">
         <item>Собака</item>
         <item>Кошка</item>
@@ -252,5 +251,33 @@
         <item>Нос</item>
         <item>Ухо</item>
 
+    </string-array>
+
+    <string-array name="colors_pictures">
+        <item>red_color</item>
+        <item>orange_color</item>
+        <item>yellow_color</item>
+        <item>green_color</item>
+        <item>blue_color</item>
+        <item>navy_blue_color</item>
+        <item>purple_color</item>
+        <item>black_color</item>
+        <item>brown_color</item>
+        <item>gray_color</item>
+        <item>white_color</item>
+    </string-array>
+
+    <string-array name="colors_names_russian">
+        <item>Красный</item>
+        <item>Оранжевый</item>
+        <item>Жолтый</item>
+        <item>Зелёный</item>
+        <item>Голубой</item>
+        <item>Синий</item>
+        <item>Фиолетовый</item>
+        <item>Чёрныйй</item>
+        <item>Коричневый</item>
+        <item>Серый</item>
+        <item>Белый</item>
     </string-array>
 </resources>

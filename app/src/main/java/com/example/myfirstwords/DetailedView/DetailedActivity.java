@@ -62,6 +62,10 @@ public class DetailedActivity extends AppCompatActivity {
                     populateMyBodyList(language);
                     break;
 
+                case 10:
+                    populateColorsList(language);
+                    break;
+
             }
 
         }
@@ -200,7 +204,31 @@ public class DetailedActivity extends AppCompatActivity {
 
 
     }
+
     //////////////////////////////////////////////////////////////////////////////////////////
+    public void populateColorsList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.colors_pictures);
+
+        String[] names = new String[images.length];
+
+        if (language == 2) {
+
+            names = getResources().getStringArray(R.array.colors_pictures);
+        }
+        if (language == 1) {
+
+            names = getResources().getStringArray(R.array.colors_names_russian);
+        }
+
+        for (int i = 0; i < images.length; i++) {
+            int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
+            items_list.add(new MenuItem(imageId, names[i].replace("_color", "")));
+
+        }
+
+
+    }
 
     public void addItemtoList(String[] names, String[] images) {
 
