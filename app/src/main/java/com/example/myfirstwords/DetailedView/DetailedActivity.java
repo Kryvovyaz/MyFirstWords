@@ -40,29 +40,36 @@ public class DetailedActivity extends AppCompatActivity {
 
             switch (list_position) {
                 case 0:
+                    items_list.clear();
                     populateAnimalsList(language);
                     break;
                 case 1:
+                    items_list.clear();
                     populateFruitsList(language);
                     break;
 
                 case 2:
+                    items_list.clear();
                     populateVegetablesList(language);
                     break;
 
                 case 3:
+                    items_list.clear();
                     populateBerriesList(language);
                     break;
                 case 7:
+                    items_list.clear();
                     populateVehiclesList(language);
                     break;
 
 
                 case 9:
+                    items_list.clear();
                     populateMyBodyList(language);
                     break;
 
                 case 10:
+                    items_list.clear();
                     populateColorsList(language);
                     break;
 
@@ -230,7 +237,8 @@ public class DetailedActivity extends AppCompatActivity {
 
     }
 
-    public void addItemtoList(String[] names, String[] images) {
+    ////////////////////////////////////////////////////////////////////////////////////////
+    public void addItemtoList(String[] images, String[] names) {
 
         for (int i = 0; i < images.length; i++) {
             int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
