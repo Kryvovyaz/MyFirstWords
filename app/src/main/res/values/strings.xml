@@ -188,7 +188,7 @@
         <item>Тыква</item>
         <item>Помидор</item>
         <item>Лук</item>
-        <item>Potato</item>
+        <item>Картошка</item>
         <item>Морковь</item>
         <item>Чеснок</item>
         <item>Горох</item>
@@ -280,4 +280,44 @@
         <item>Серый</item>
         <item>Белый</item>
     </string-array>
+
+    <string-array name="objects_pictures">
+        <item>table</item>
+        <item>chair</item>
+        <item>spoon</item>
+        <item>fork</item>
+        <item>tv</item>
+        <item>remote_control</item>
+
+    </string-array>
+
+    <string-array name="objects_names_russian">
+        <item>Стол</item>
+        <item>Стул</item>
+        <item>Ложка</item>
+        <item>Вилка</item>
+
+        <item>Телевизор</item>
+        <item>Пульт</item>
+
+        <item>Белый</item>
+    </string-array>
+
+
+    <string-array name="food_pictures">
+        <item>milk</item>
+        <item>egg</item>
+        <item>bread</item>
+        <item>cheese</item>
+
+    </string-array>
+
+    <string-array name="food_names_russian">
+        <item>Яйцо</item>
+        <item>Стул</item>
+        <item>Хлеб</item>
+        <item>Сыр</item>
+
+    </string-array>
+
 </resources>

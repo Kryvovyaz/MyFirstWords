@@ -44,9 +44,7 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
                     if (language == 2) {
                         t1.setLanguage(Locale.ENGLISH);
                     }
-                    if (language == 1) {
-                        t1.setLanguage(new Locale("ru"));
-                    }
+                    if (language == 1) t1.setLanguage(new Locale("ru"));
 
                 }
             }

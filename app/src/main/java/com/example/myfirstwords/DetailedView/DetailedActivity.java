@@ -40,36 +40,44 @@ public class DetailedActivity extends AppCompatActivity {
 
             switch (list_position) {
                 case 0:
-                    items_list.clear();
+                    //items_list.clear();
                     populateAnimalsList(language);
                     break;
                 case 1:
-                    items_list.clear();
+                    //items_list.clear();
                     populateFruitsList(language);
                     break;
 
                 case 2:
-                    items_list.clear();
+                    //  items_list.clear();
                     populateVegetablesList(language);
                     break;
 
                 case 3:
-                    items_list.clear();
+                    //  items_list.clear();
                     populateBerriesList(language);
                     break;
+                case 4:
+                    //  items_list.clear();
+                    populateFoodList(language);
+                    break;
+                case 5:
+                    //  items_list.clear();
+                    populateObjectsList(language);
+                    break;
                 case 7:
-                    items_list.clear();
+                    // items_list.clear();
                     populateVehiclesList(language);
                     break;
 
 
                 case 9:
-                    items_list.clear();
+                    // items_list.clear();
                     populateMyBodyList(language);
                     break;
 
                 case 10:
-                    items_list.clear();
+                    //  items_list.clear();
                     populateColorsList(language);
                     break;
 
@@ -152,8 +160,48 @@ public class DetailedActivity extends AppCompatActivity {
 
     }
 
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    public void populateFoodList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.food_pictures);
+
+        String[] names = new String[images.length];
+
+        if (language == 2) {
+
+            names = getResources().getStringArray(R.array.food_pictures);
+        }
+        if (language == 1) {
+
+            names = getResources().getStringArray(R.array.food_names_russian);
+        }
+
+        addItemtoList(images, names);
+
+    }
 
     /////////////////////////////////////////////////////////////////////////////////////////////
+    public void populateObjectsList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.objects_pictures);
+
+        String[] names = new String[images.length];
+
+        if (language == 2) {
+
+            names = getResources().getStringArray(R.array.objects_pictures);
+        }
+        if (language == 1) {
+
+            names = getResources().getStringArray(R.array.objects_names_russian);
+        }
+
+        addItemtoList(images, names);
+
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////
+
     public void populateVegetablesList(int language) {
 
         String[] images = getResources().getStringArray(R.array.vegetables_pictures);
@@ -228,11 +276,7 @@ public class DetailedActivity extends AppCompatActivity {
             names = getResources().getStringArray(R.array.colors_names_russian);
         }
 
-        for (int i = 0; i < images.length; i++) {
-            int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
-            items_list.add(new MenuItem(imageId, names[i].replace("_color", "")));
-
-        }
+        addItemtoList(images, names);
 
 
     }
@@ -242,7 +286,7 @@ public class DetailedActivity extends AppCompatActivity {
 
         for (int i = 0; i < images.length; i++) {
             int imageId = getResources().getIdentifier(images[i], "drawable", getPackageName());
-            items_list.add(new MenuItem(imageId, names[i]));
+            items_list.add(new MenuItem(imageId, names[i].replaceAll("_", " ").replaceAll("color", "")));
 
         }
     }
