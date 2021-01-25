@@ -286,6 +286,7 @@
         <item>chair</item>
         <item>spoon</item>
         <item>fork</item>
+        <item>knife</item>
         <item>tv</item>
         <item>remote_control</item>
 
@@ -296,6 +297,7 @@
         <item>Стул</item>
         <item>Ложка</item>
         <item>Вилка</item>
+        <item>Нож</item>
 
         <item>Телевизор</item>
         <item>Пульт</item>
@@ -313,11 +315,46 @@
     </string-array>
 
     <string-array name="food_names_russian">
+        <item>Молоко</item>
         <item>Яйцо</item>
-        <item>Стул</item>
         <item>Хлеб</item>
         <item>Сыр</item>
 
+    </string-array>
+
+    <string-array name="clothes_pictures">
+        <item>shirt</item>
+        <item>shorts</item>
+        <item>shoes</item>
+        <item>coat</item>
+        <item>pants</item>
+        <item>dress</item>
+        <item>gloves</item>
+        <item>socks</item>
+
+    </string-array>
+
+    <string-array name="clothes_names_russian">
+        <item>Футболка</item>
+        <item>Шорты</item>
+        <item>Обувь</item>
+        <item>Куртка</item>
+        <item>Штаны</item>
+        <item>Платье</item>
+
+        <item>Перчатки</item>
+        <item>Носки</item>
+
+    </string-array>
+
+    <string-array name="outside_pictures">
+        <item>tree</item>
+
+
+    </string-array>
+
+    <string-array name="outside_names_russian">
+        <item>Дерево</item>
     </string-array>
 
 </resources>

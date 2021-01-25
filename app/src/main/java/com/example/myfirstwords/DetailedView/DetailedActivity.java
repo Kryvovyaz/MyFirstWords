@@ -65,12 +65,19 @@ public class DetailedActivity extends AppCompatActivity {
                     //  items_list.clear();
                     populateObjectsList(language);
                     break;
+                case 6:
+                    //  items_list.clear();
+                    populateClothesList(language);
+                    break;
                 case 7:
                     // items_list.clear();
                     populateVehiclesList(language);
                     break;
 
-
+                case 8:
+                    // items_list.clear();
+                    populateOutsideList(language);
+                    break;
                 case 9:
                     // items_list.clear();
                     populateMyBodyList(language);
@@ -140,6 +147,26 @@ public class DetailedActivity extends AppCompatActivity {
 
     }
 
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    public void populateOutsideList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.outside_pictures);
+
+        String[] names = new String[images.length];
+
+        if (language == 2) {
+
+            names = getResources().getStringArray(R.array.outside_pictures);
+        }
+        if (language == 1) {
+
+            names = getResources().getStringArray(R.array.outside_names_russian);
+        }
+
+        addItemtoList(images, names);
+
+    }
+
     //////////////////////////////////////////////////////////////////////////////////////////////
     public void populateBerriesList(int language) {
 
@@ -194,6 +221,26 @@ public class DetailedActivity extends AppCompatActivity {
         if (language == 1) {
 
             names = getResources().getStringArray(R.array.objects_names_russian);
+        }
+
+        addItemtoList(images, names);
+
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////////
+    public void populateClothesList(int language) {
+
+        String[] images = getResources().getStringArray(R.array.clothes_pictures);
+
+        String[] names = new String[images.length];
+
+        if (language == 2) {
+
+            names = getResources().getStringArray(R.array.clothes_pictures);
+        }
+        if (language == 1) {
+
+            names = getResources().getStringArray(R.array.clothes_names_russian);
         }
 
         addItemtoList(images, names);
