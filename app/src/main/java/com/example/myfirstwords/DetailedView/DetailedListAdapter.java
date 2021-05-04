@@ -45,18 +45,15 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
                         t1.setLanguage(Locale.ENGLISH);
                     }
                     if (language == 1) t1.setLanguage(new Locale("ru"));
-
                 }
             }
         });
-
         return new DetailedViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull DetailedViewHolder holder, int position) {
         holder.itemImage.setImageResource(items_list.get(position).getImageId());
-
         if (listposition == 0) {
             holder.make_sound.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -64,27 +61,19 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
                     play(v, items_list.get(position).getSound_effectID());
                 }
             });
-
-
         } else {
             holder.make_sound.setVisibility(View.INVISIBLE);
         }
-
         holder.make_say.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//
 //                if (player.isPlaying()) {
 //                    stopPlayer(v);
 //                }
-                // play(v, items_list.get(position).getMake_sound());
                 String toSpeak = items_list.get(position).getName();
-
                 t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
-
             }
         });
-
     }
 
     @Override
@@ -92,8 +81,6 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
         return items_list.size();
     }
 
-
-    //    }
     public void play(View v, int id) {
         if (player != null) {
             player.release();
@@ -111,31 +98,23 @@ public class DetailedListAdapter extends RecyclerView.Adapter<DetailedListAdapte
 
     public static class DetailedViewHolder extends RecyclerView.ViewHolder {
 
-
         public ArrayList<MenuItem> items_list;
         public Button make_sound;
         public Button make_say;
-
         private ImageView itemImage;
 
         public DetailedViewHolder(@NonNull View itemView, ArrayList<MenuItem> animals) {
             super(itemView);
             this.items_list = animals;
-
         }
 
         public DetailedViewHolder(@NonNull View itemView) {
-
             super(itemView);
-
             make_say = itemView.findViewById(R.id.make_say);
             make_sound = itemView.findViewById(R.id.make_sound);
             itemImage = itemView.findViewById(R.id.details_image);
             make_sound.setSoundEffectsEnabled(false);
             make_say.setSoundEffectsEnabled(false);
-
-
         }
     }
-
 }

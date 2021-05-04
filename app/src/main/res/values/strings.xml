@@ -289,7 +289,6 @@
         <item>knife</item>
         <item>tv</item>
         <item>remote_control</item>
-
     </string-array>
 
     <string-array name="objects_names_russian">
@@ -298,10 +297,8 @@
         <item>Ложка</item>
         <item>Вилка</item>
         <item>Нож</item>
-
         <item>Телевизор</item>
         <item>Пульт</item>
-
         <item>Белый</item>
     </string-array>
 
@@ -311,7 +308,6 @@
         <item>egg</item>
         <item>bread</item>
         <item>cheese</item>
-
     </string-array>
 
     <string-array name="food_names_russian">
@@ -319,7 +315,6 @@
         <item>Яйцо</item>
         <item>Хлеб</item>
         <item>Сыр</item>
-
     </string-array>
 
     <string-array name="clothes_pictures">
@@ -331,7 +326,6 @@
         <item>dress</item>
         <item>gloves</item>
         <item>socks</item>
-
     </string-array>
 
     <string-array name="clothes_names_russian">
@@ -341,10 +335,8 @@
         <item>Куртка</item>
         <item>Штаны</item>
         <item>Платье</item>
-
         <item>Перчатки</item>
         <item>Носки</item>
-
     </string-array>
 
     <string-array name="outside_pictures">

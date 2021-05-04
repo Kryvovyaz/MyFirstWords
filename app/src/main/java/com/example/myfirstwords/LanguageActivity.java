@@ -20,8 +20,6 @@ public class LanguageActivity extends AppCompatActivity {
     private RecyclerView recyclerView_main;
     private int language;
     private ArrayList<Categorie> menu = new ArrayList<>();
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,12 +46,9 @@ public class LanguageActivity extends AppCompatActivity {
                 bundle.putInt("Position", position);
                 intent.putExtras(bundle);
                 startActivity(intent);
-
-
             }
         });
     }
-
 
     public void populateMenuList(int language) {
         String[] imageTitles = getResources().getStringArray(R.array.categories_images);
@@ -69,8 +64,4 @@ public class LanguageActivity extends AppCompatActivity {
             menu.add(new Categorie(categ[i], imageId));
         }
     }
-
-
-    // }
-
 }
